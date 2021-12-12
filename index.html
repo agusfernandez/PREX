@@ -13,11 +13,15 @@
 
     <!-- Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-
-    <header class="header">
-        <nav class="container flex">
+    <header class="header ">
+        <nav class="containers menu-nav flex flex-jc-space flex-jc-c flex-jc-cent">
+            <div class="overlay__layer in__fade"></div>
             <div class="header__logo">
                 <img src="assets/Prex_Color.png" alt="logo_prex_color">
             </div>
@@ -28,16 +32,17 @@
                 <span></span>
             </a>
             <!--menu desktop-->
-            <div class="header__links">
+            <div class="header__links hide__mobile">
                     <a href="#">Inicio</a>
                     <a href="#">Para vos</a>
                     <a href="#">Prextamo</a>
                     <a href="#">Ayuda</a>
+                    <span><a href="#" class="btn btn__sign_in">Ingresar</a></span>
             </div>
-            <a href="#" class="btn btn__sign_in">Ingresar</a>
 
         </nav>
-        <div class="menu__mobile show">
+        <!--show this mobile-->
+        <div class="menu__mobile hide__desktop">
             <a href="#">Inicio</a>
             <a href="#">Para vos</a>
             <a href="#">Prextamo</a>

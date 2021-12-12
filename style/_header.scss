@@ -1,0 +1,34 @@
+.header{
+    padding: 1.5625rem 8.6875rem ;
+
+    a, a:visited, a:hover{
+        text-decoration: none;
+        color:$blackText;
+        font-family: 'Nunito', sans-serif;
+        font-size: $fonts-text;
+    }
+
+    .nav{
+        position: relative;
+        background-color: $greyBackground;
+    }
+
+    &__links{
+        align-items: center;
+
+        a{
+
+            &:not(:last-child){
+                padding:10px 60px;
+        }
+        }
+
+        span>.btn{
+            background-color: $violetPrex;
+            color:$white;
+        }
+
+
+    }
+
+}

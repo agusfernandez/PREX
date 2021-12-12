@@ -1,0 +1,44 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Poppins', sans-serif ;
+}
+
+.flex{
+    display: flex;
+    &-jc-space{
+        justify-content: space-between!important;
+    }
+    &-jc-c{
+        justify-content: center;
+    }
+    &-jc-cent{
+        align-items: center;
+    }
+}
+
+.containers{
+    max-width: 100%;
+}
+
+
+.btn{
+    background-color: aquamarine;
+    border-radius: 32px;
+    cursor: pointer;
+    border: 0;
+}
+
+.hide__mobile{
+    @include breakpoint-down(medium){
+        display: none;
+    }
+}
+
+.hide__desktop{
+    @include breakpoint-up(large){
+        display: none;
+    }
+}
