@@ -17,19 +17,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
 </head>
 <body>
     <header class="header ">
-        <nav class="containers menu-nav flex flex-jc-space flex-jc-c flex-jc-cent">
+        <nav class=" menu-nav flex flex-jc-space flex-jc-c flex-jc-cent">
             <div class="overlay__layer in__fade"></div>
             <div class="header__logo">
                 <img src="assets/Prex_Color.png" alt="logo_prex_color">
             </div>
             <!--access to mobile menu-->
             <a id="btn__hamburguer" class="header__menu hide__desktop" href="#">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="line-hamburguer"></span>
+                <span class="line-hamburguer"></span></span>
+                <span class="line-hamburguer"></span></span>
             </a>
             <!--menu desktop-->
             <div class="header__links hide__mobile">
@@ -42,7 +44,7 @@
 
         </nav>
         <!--show this mobile-->
-        <div class="menu__mobile hide__desktop">
+        <div class="menu__mobile flex flex-column hide__desktop in__fade">
             <a href="#">Inicio</a>
             <a href="#">Para vos</a>
             <a href="#">Prextamo</a>
@@ -51,11 +53,87 @@
         </div>
     </header>
 
+    <section class="banner__info">
+        <div clas= "row" >
+            <div class="col-lg-6 col-md-6 col-sm-12">
+                <div class="banner__info__data">
+                    <h1>Tu tarjeta prepaga internacional gratis</h1>
+                    <p>Sin costo de mantenimiento ni letra chica. Pedí la tuya desde la App.</p>
+                    <a class="btn cta__banner">Solicitar Prex GRATIS</a>
+                </div>
+            </div>
+            <div class="banner__info__image col-lg-6 col-md-6 col-sm-12">
+                <div class="image-phone">
+                    <img src="assets/prex_tarjeta_app_gratis.png" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="cards__section container">
+        <div class="cards__section_title row">
+            <h1>¿Qué podés hacer con tu Prex?</h1>
+        </div>
+        <div class="row cards__section__main mobile__slider">
+         
+              <div class="cards col-lg-3">
+                 <div class="cards__box__info">
+                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__title">
+                        Compras
+                    </div>
+                    <div class="cards__info">
+                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                    </div>
+                </div>
+            </div>
+            <div class="cards col-lg-3">
+                <div class="cards__box__info">
+                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__title">
+                        Compras
+                    </div>
+                    <div class="cards__info">
+                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                    </div>
+                </div>
+
+            </div>
+            <div class="cards col-lg-3">
+                <div class="cards__box__info">
+                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__title">
+                        Compras
+                    </div>
+                    <div class="cards__info">
+                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                    </div>
+                </div>
+
+            </div>
+            <div class="cards col-lg-3">
+                <div class="cards__box__info">
+                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__title">
+                        Compras
+                    </div>
+                    <div class="cards__info">
+                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                    </div>
+                </div>
+
+            </div> 
+
+        </div>
+    </section>
+
 
 
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="app/main.js" type="text/javascript"></script>
 </body>
 </html>

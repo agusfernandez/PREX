@@ -1,0 +1,43 @@
+.banner__info{
+    background-color: $violetPrex;
+    padding: 80px 20px;
+    align-items: center;
+    height: 30vw;
+
+    @include breakpoints-down(medium){
+        height: 100%;
+
+    }
+
+    h1, p{
+        color: $white;
+    }
+
+    h1{
+        font-size: $font-maintitle-banner;
+        margin-bottom: 20px;
+        
+    }
+
+    p{
+        font-size: $fonts-title;
+        margin-bottom: 40px;
+
+
+    }
+
+    &__data, &__image{
+        align-items: center;
+    }
+
+
+    .btn{
+        background-color: $white;
+        color: $violetPrex;
+        padding: 20px 0px;
+        font-size: $fonts-text;
+        font-weight: normal;
+    }
+
+
+}

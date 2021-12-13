@@ -1,9 +1,23 @@
-*{
+@import 'mixins';
+@import 'variables';
+
+* *::before, *::after{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body{
     font-family:'Poppins', sans-serif ;
+    &.noscroll{
+        overflow: hidden;
+    }
+}
+
+
+
+p{
+    font-family: 'Nunito', sans-serif;
 }
 
 .flex{
@@ -17,6 +31,9 @@ body{
     &-jc-cent{
         align-items: center;
     }
+    &-column{
+        flex-direction: column;
+    }
 }
 
 .containers{
@@ -25,20 +42,28 @@ body{
 
 
 .btn{
-    background-color: aquamarine;
     border-radius: 32px;
     cursor: pointer;
     border: 0;
+    width: 250px;
 }
 
 .hide__mobile{
-    @include breakpoint-down(medium){
+    @include breakpoints-down(medium){
         display: none;
     }
 }
 
 .hide__desktop{
-    @include breakpoint-up(large){
+    @include breakpoints-up(large){
         display: none;
     }
+}
+
+.cards{
+    background-color: $white;
+    box-shadow: 0px 0px 14px #00000029;
+    border-radius: 20px;
+    margin:5px;
+
 }
