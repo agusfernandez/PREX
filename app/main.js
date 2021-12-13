@@ -16,20 +16,19 @@ $(document).ready(function() {
         }
     });
 
-    $(".mobile__slider").slick({
-        dots: false,
-        speed: 300,
-        slidesToShow: 0,
-        adaptiveHeight: true,
-        responsive: [
+  
+
+    $('.mobile__slider').slick({
+      dots:true,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      mobileFirst: true,
+      responsive: [
             {
-              breakpoint: 500,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-              }
+              breakpoint: 1220,
+              settings: 'unslick'
             }
-          ]  
+      ]
     });
 
 
