@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Poppins', sans-serif;
+  margin: auto;
 }
 
 body.noscroll {
@@ -53,10 +54,10 @@ p {
 }
 
 .btn {
-  border-radius: 32px;
+  border-radius: 2em;
   cursor: pointer;
   border: 0;
-  width: 250px;
+  width: 15.625em;
 }
 
 @media (max-width: 1023px) {
@@ -71,14 +72,6 @@ p {
   }
 }
 
-.cards {
-  background-color: #fff;
-  -webkit-box-shadow: 0px 0px 14px #00000029;
-          box-shadow: 0px 0px 14px #00000029;
-  border-radius: 20px;
-  margin: 5px;
-}
-
 .header {
   padding: 20px 0px;
 }
@@ -87,12 +80,17 @@ p {
   text-decoration: none;
   color: #242B4A;
   font-family: 'Nunito', sans-serif;
-  font-size: 16px;
+  font-size: 1em;
 }
 
 .header .nav {
   position: relative;
   background-color: #F4F4F9;
+  z-index: 1;
+}
+
+.header.open .header__menu {
+  z-index: 1;
 }
 
 .header.open .header__menu > span:first-child {
@@ -118,6 +116,7 @@ p {
   top: 0;
   bottom: 0;
   background-color: #5C19AE;
+  z-index: 1;
 }
 
 .header__menu > span {
@@ -146,7 +145,7 @@ p {
 }
 
 .header__links a:not(:last-child) {
-  padding: 60px;
+  padding: 0rem 3.75rem;
 }
 
 .header__links span > .btn {
@@ -163,10 +162,11 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  z-index: 1;
 }
 
 .header .menu__mobile > a {
-  font-size: 25px;
+  font-size: 1.563em;
   color: #fff;
   text-align: center;
 }
@@ -176,9 +176,9 @@ p {
 }
 
 .header .menu__mobile .btn__sign_in {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 100;
-  padding: 20px;
+  padding: 1.25rem;
   background-color: #fff;
   color: #5C19AE;
 }
@@ -189,7 +189,7 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 30vw;
+  height: 100%;
 }
 
 @media (max-width: 1023px) {
@@ -203,13 +203,17 @@ p {
 }
 
 .banner__info h1 {
-  font-size: 30px;
-  margin-bottom: 20px;
+  font-size: 2.813em;
+  margin-bottom: 1.25em;
 }
 
 .banner__info p {
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 1.25em;
+  margin-bottom: 2.5em;
+}
+
+.banner__info .container {
+  padding: 0;
 }
 
 .banner__info__data, .banner__info__image {
@@ -218,17 +222,93 @@ p {
           align-items: center;
 }
 
+.banner__info .image-phone {
+  width: 70%;
+}
+
 .banner__info .btn {
   background-color: #fff;
   color: #5C19AE;
-  padding: 20px 0px;
-  font-size: 16px;
+  padding: 2rem 0rem;
+  font-size: 1em;
   font-weight: normal;
+}
+
+.cards__section .cards__section_title {
+  margin: 3.75em 0px;
 }
 
 .cards__section h1 {
   font-weight: bold;
   text-align: center;
+}
+
+.cards__section .cards__box__info {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 4.4em 0.313em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 14px #00000029;
+          box-shadow: 0px 0px 14px #00000029;
+  border-radius: 20px;
+  height: 319px;
+  width: 260px;
+  margin: auto;
+}
+
+@media (max-width: 1023px) {
+  .cards__section .cards__box__info .cards__box__info {
+    margin: auto;
+  }
+}
+
+.cards__section .cards__box__info .cards__img {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 102px;
+}
+
+.cards__section .cards__box__info .cards__title {
+  color: #5C19AE;
+  font-size: 1.25em;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 1.469rem;
+}
+
+.cards__section .cards__box__info .cards__info {
+  font-size: 1em;
+  font-weight: normal;
+  text-align: center;
+  margin-top: 1.375rem;
+}
+
+.slick-next.slick-arrow {
+  top: 50%;
+  width: 20%;
+  height: 100%;
+  right: 20px;
+  margin-top: -13px;
+  position: absolute;
+  font-size: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  background-image: url("/assets/arrow-right-circle.svg");
+  background-repeat: no-repeat;
+}
+
+.slick-prev.slick-arrow {
+  display: none !important;
 }
 
 .in__fade {

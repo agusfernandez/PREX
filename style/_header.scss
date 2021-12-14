@@ -11,12 +11,18 @@
     .nav{
         position: relative;
         background-color: $greyBackground;
+        z-index: 1;
     }
+
+
 
     //hamburguer animation
     &.open{
 
         .header__menu{
+            
+            z-index: 1;
+
             >span:first-child{
                 transform: rotate(40deg) ;
 
@@ -42,6 +48,8 @@
         top:0;
         bottom: 0;
         background-color: $violetPrex;
+        z-index: 1;
+
     }
 
     &__menu{
@@ -72,7 +80,7 @@
         a{
 
             &:not(:last-child){
-                padding:60px;
+                padding:0rem 3.75rem;
         }
         }
 
@@ -90,6 +98,8 @@
         left: 50%;
         transform: translate(-50%, 50%);
         align-items: center;
+        z-index: 1;
+
     
       >a{
         font-size: $fonts-navbar-mobile;
@@ -105,7 +115,7 @@
       .btn__sign_in{
         font-size:$fonts-text;
         font-weight: 100;
-        padding: 20px ;
+        padding: 1.25rem ;
         background-color: $white;
         color: $violetPrex;
        }

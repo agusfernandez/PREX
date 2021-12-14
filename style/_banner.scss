@@ -2,7 +2,7 @@
     background-color: $violetPrex;
     padding: 80px 20px;
     align-items: center;
-    height: 30vw;
+    height: 100%;
 
     @include breakpoints-down(medium){
         height: 100%;
@@ -14,27 +14,34 @@
     }
 
     h1{
-        font-size: $font-maintitle-banner;
-        margin-bottom: 20px;
+        font-size: $fonts-banner-desktop;
+        margin-bottom: 1.25em; //20px
         
     }
 
     p{
         font-size: $fonts-title;
-        margin-bottom: 40px;
+        margin-bottom: 2.5em; //40px
 
 
+    }
+
+    .container{
+        padding: 0;
     }
 
     &__data, &__image{
         align-items: center;
     }
 
+    .image-phone {
+        width: 70%;
+    }
 
     .btn{
         background-color: $white;
         color: $violetPrex;
-        padding: 20px 0px;
+        padding: 2rem 0rem;
         font-size: $fonts-text;
         font-weight: normal;
     }

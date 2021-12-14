@@ -17,21 +17,5 @@ $(document).ready(function() {
     });
 
   
-
-    $('.mobile__slider').slick({
-      dots:true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      mobileFirst: true,
-      responsive: [
-            {
-              breakpoint: 1220,
-              settings: 'unslick'
-            }
-      ]
-    });
-
-
-
 });
 

@@ -1,0 +1,18 @@
+.slick-next.slick-arrow{
+    top: 50%;
+    width: 20%;
+    height: 100%;
+    right: 20px;
+    margin-top: -13px;
+    position: absolute;
+    font-size: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    background-image: url('/assets/arrow-right-circle.svg');
+    background-repeat: no-repeat;
+}
+
+.slick-prev.slick-arrow{
+    display: none!important;
+}

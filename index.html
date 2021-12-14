@@ -17,12 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600&family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+
 </head>
 <body>
-    <header class="header ">
+    <header class="header container">
         <nav class=" menu-nav flex flex-jc-space flex-jc-c flex-jc-cent">
             <div class="overlay__layer in__fade"></div>
             <div class="header__logo">
@@ -55,21 +54,22 @@
     </header>
 
     <section class="banner__info">
-        <div clas= "row" >
-            <div class="col-lg-6 col-md-6 col-sm-12">
-                <div class="banner__info__data">
-                    <h1>Tu tarjeta prepaga internacional gratis</h1>
-                    <p>Sin costo de mantenimiento ni letra chica. Pedí la tuya desde la App.</p>
-                    <a class="btn cta__banner">Solicitar Prex GRATIS</a>
+        <div class="container">
+            <div clas= "row" >
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <div class="banner__info__data">
+                        <h1>Tu tarjeta prepaga internacional gratis</h1>
+                        <p>Sin costo de mantenimiento ni letra chica. Pedí la tuya desde la App.</p>
+                        <a class="btn cta__banner">Solicitar Prex GRATIS</a>
+                    </div>
                 </div>
-            </div>
-            <div class="banner__info__image col-lg-6 col-md-6 col-sm-12">
-                <div class="image-phone">
-                    <img src="assets/prex_tarjeta_app_gratis.png" alt="">
+                <div class="banner__info__image col-lg-6 col-md-6 col-sm-12">
+                    <div class="image-phone-box">
+                        <img class="image-phone" src="assets/prex_tarjeta_banner.png" alt="banner-pp">
+                    </div>
                 </div>
             </div>
         </div>
-
     </section>
 
     <section class="cards__section container">
@@ -78,49 +78,49 @@
         </div>
         <div class="row cards__section__main mobile__slider">
          
-              <div class="cards col-lg-3">
+              <div class="cards col-lg-3 col-md-6 col-sm-6">
                  <div class="cards__box__info">
-                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__img"><img class="img-service" src="assets/usos-prex_compras-con-tarjeta.svg" alt="servicio_tarjeta"></div>
                     <div class="cards__title">
                         Compras
                     </div>
                     <div class="cards__info">
-                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard.
                     </div>
                 </div>
             </div>
-            <div class="cards col-lg-3">
+            <div class="cards col-lg-3 col-md-6 col-sm-6">
                 <div class="cards__box__info">
-                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__img"><img class="img-service" src="assets/usos-prex_compras-online.svg" alt="servicio_tarjeta"></div>
                     <div class="cards__title">
-                        Compras
+                        Compras Online
                     </div>
                     <div class="cards__info">
-                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
-                    </div>
-                </div>
-
-            </div>
-            <div class="cards col-lg-3">
-                <div class="cards__box__info">
-                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
-                    <div class="cards__title">
-                        Compras
-                    </div>
-                    <div class="cards__info">
-                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                        Comprá online o pagá servicios como Netflix, Spotify y otros.                    
                     </div>
                 </div>
 
             </div>
-            <div class="cards col-lg-3">
+            <div class="cards col-lg-3 col-md-6 col-sm-6">
                 <div class="cards__box__info">
-                    <div><img src="assets/usos-prex_compras-con-tarjeta.png" alt="servicio_tarjeta"></div>
+                    <div class="cards__img"><img class="img-service" src="assets/usos-prex_transferencias-cvu-prex.svg" alt="servicio_tarjeta"></div>
                     <div class="cards__title">
-                        Compras
+                        Transferencias
                     </div>
                     <div class="cards__info">
-                        Comprá en Argentina o cualquier lugar del mundo que acepten Mastercard
+                        Transferí Prex a Prex o con tu CVU de forma simple y rápida.
+                    </div>
+                </div>
+
+            </div>
+            <div class="cards col-lg-3 col-md-6 col-sm-6">
+                <div class="cards__box__info">
+                    <div class="cards__img"><img class="img-service" src="assets/usos-prex_cambio-de-moneda-comprar-dolares.svg" alt="servicio_tarjeta"></div>
+                    <div class="cards__title">
+                        Cambio de Moneda
+                    </div>
+                    <div class="cards__info">
+                        Transferí Prex a Prex o con tu CVU de forma simple y rápida.
                     </div>
                 </div>
 
@@ -133,10 +133,14 @@
 
 
 
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
+
     <script src="app/main.js" type="text/javascript"></script>
+    <script src="app/slider.js" type="text/javascript"></script>
+
 </body>
 </html>

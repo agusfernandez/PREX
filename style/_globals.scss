@@ -12,6 +12,8 @@ body{
     &.noscroll{
         overflow: hidden;
     }
+    margin:auto;
+
 }
 
 
@@ -42,10 +44,10 @@ p{
 
 
 .btn{
-    border-radius: 32px;
+    border-radius: 2em; //32px
     cursor: pointer;
     border: 0;
-    width: 250px;
+    width: 15.625em; //250px
 }
 
 .hide__mobile{
@@ -60,10 +62,4 @@ p{
     }
 }
 
-.cards{
-    background-color: $white;
-    box-shadow: 0px 0px 14px #00000029;
-    border-radius: 20px;
-    margin:5px;
 
-}
