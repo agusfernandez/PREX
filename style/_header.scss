@@ -1,5 +1,11 @@
 .header{
-    padding:20px 0px;
+    padding-top:20px;
+    padding-bottom: 20px;
+
+    @include breakpoints-down(small){
+        padding-right: 15px;
+        padding-left: 15px;
+    }
 
     a, a:visited, a:hover{
         text-decoration: none;
@@ -8,11 +14,17 @@
         font-size: $fonts-text;
     }
 
-    .nav{
+    nav{
         position: relative;
-        background-color: $greyBackground;
         z-index: 1;
+
+        @include breakpoints-down(small){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
     }
+
+
 
 
 

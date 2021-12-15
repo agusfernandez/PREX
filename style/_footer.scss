@@ -1,0 +1,68 @@
+.footer__prex{
+    background-color: $greyBackground;
+    padding: 4.125em;
+    margin-top:3.75em;
+
+    @include breakpoints-down(xx-small){
+     
+        padding: 2.125em;
+
+    }
+
+
+
+    h3{
+        font-size: 1em;
+        font-weight: bold;
+    }
+
+    .prex{
+
+        @include breakpoints-down(small){
+            align-items: center;
+            text-align: center;
+            margin-bottom: 2.5em;
+            
+        }
+    }
+
+    .prex__mission__info{
+        font-size: 1em;
+        margin-top:0.938em;
+    }
+
+    .prex__redes__box{
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+        position: relative;
+        margin-top: 0.91em;
+
+
+        @include breakpoints-down(small){
+            justify-content: center;
+            
+        }
+
+
+
+        .prex__redes__icons{
+            background-color: $violetPrex;
+            width: 3.572em;
+            height: 3.572em;
+            border-radius: 1.875em;
+            position: relative;
+            margin-right: 1.563em;
+
+            >img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+        }
+
+
+
+    }
+}

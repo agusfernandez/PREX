@@ -9,14 +9,25 @@
 
 body{
     font-family:'Poppins', sans-serif ;
+    margin:auto;
+    width: 100%;
+
+
     &.noscroll{
         overflow: hidden;
     }
-    margin:auto;
+    
+
 
 }
 
-
+.box-central{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1400px;
+}
 
 p{
     font-family: 'Nunito', sans-serif;

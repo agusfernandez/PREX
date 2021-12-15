@@ -11,7 +11,15 @@
     border: none;
     background-image: url('/assets/arrow-right-circle.svg');
     background-repeat: no-repeat;
+
+
+    @include breakpoints-down(x-small){
+        display: none!important;
+        
+    }
 }
+
+
 
 .slick-prev.slick-arrow{
     display: none!important;

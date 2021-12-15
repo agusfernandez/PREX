@@ -1,6 +1,6 @@
 .banner__info{
     background-color: $violetPrex;
-    padding: 80px 20px;
+    padding: 5px 20px;
     align-items: center;
     height: 100%;
 
@@ -15,27 +15,60 @@
 
     h1{
         font-size: $fonts-banner-desktop;
-        margin-bottom: 1.25em; //20px
+        margin-bottom: 0.5em;
+        font-weight:500;
+        line-height: 1.5;
+
+        @include breakpoints-down(mobile-small){
+            font-size: $font-maintitle-banner;
+        }
+
+     
         
     }
 
     p{
         font-size: $fonts-title;
         margin-bottom: 2.5em; //40px
+  
 
 
     }
 
+    
+
     .container{
         padding: 0;
+    }
+
+   
+
+    &__data{
+        margin-top: 25%;
+
+        @include breakpoints-down(large){
+            margin-top: 10%;
+        }
+
     }
 
     &__data, &__image{
         align-items: center;
     }
 
+    .image-phone-box{
+        display: flex;
+        justify-content: center;
+    }
+    
+
     .image-phone {
-        width: 70%;
+        width: 60%;
+        float: right;
+
+        @include breakpoints-down(medium){
+            float: none;
+        }
     }
 
     .btn{

@@ -11,43 +11,58 @@
         text-align: center;
     }
 
+   
+     
+   
+    .cards{
 
+        margin: 0.5em 0em;
 
-    .cards__box__info{
-        align-items: center;
-        padding: 4.4em 0.313em;
-        display: flex;
-        flex-direction: column;
-        background-color: $white;
-        box-shadow: 0px 0px 14px #00000029;
-        border-radius: 20px;
-        height: 319px;
-        width: 260px;
-        margin: auto;
-
-        @include breakpoints-down(medium){
-            .cards__box__info{
-                margin: auto;
-            }
-        }
-
-        .cards__img{
+        .cards__box__info{
             align-items: center;
-            height: 102px;
-        }
+            padding: 4.4em 0.313em;
+            display: flex;
+            flex-direction: column;
+            background-color: $white;
+            box-shadow: 0px 0px 14px #00000029;
+            border-radius: 20px;
+            height: 319px;
+            width: 260px;
+            margin: auto;
 
-        .cards__title{
-            color:$violetPrex;
-            font-size: $fonts-title;
-            text-align: center;
-            font-weight: bold;
-            margin-top: 1.469rem;
-        }
-        .cards__info{
-            font-size: $fonts-text;
-            font-weight: normal;
-            text-align: center;            
-            margin-top: 1.375rem;
+            @include breakpoints-up(large){
+                width: 100%;
+                margin: 0.6em 0em;
+
+                
+            }
+            @include breakpoints-up(medium){
+                width: 100%;
+                margin: 0.6em 0em;
+
+                
+            }
+        
+
+            .cards__img{
+                align-items: center;
+                height: 102px;
+            }
+
+            .cards__title{
+                color:$violetPrex;
+                font-size: $fonts-title;
+                text-align: center;
+                font-weight: bold;
+                margin-top: 1.469rem;
+            }
+            .cards__info{
+                font-size: $fonts-text;
+                font-weight: normal;
+                text-align: center;            
+                margin-top: 1.375rem;
+
+            }
 
         }
 

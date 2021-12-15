@@ -3,11 +3,9 @@
 
 }
 
-//640px, 1024px, 1400px
-$breakpoints-up:("medium":"640px", "large": "1024px", "xlarge": "1400px" );
+$breakpoints-up:("medium":"769px", "large": "1024px","xlarge":"1199px", "xxlarge": "1400px" );
 
-//639px, 1023px, 1399px //valor dividido 16
-$breakpoints-down:("small": "639px", "medium":"1023px", "large": "1399px" );
+$breakpoints-down:("xx-small":"320px","mobile-small":"414px","x-small":"546px", "small": "768px", "medium":"1023px","large":"1198px", "xlarge": "1399px" );
 
 //mixin es de sass y le pasamos un parametro para que sea reutilizado
 @mixin breakpoints-up($size){
